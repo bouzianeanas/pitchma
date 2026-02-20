@@ -41,12 +41,20 @@ CREATE TABLE otp_codes (
 -- ============================================
 CREATE TABLE cities (
   id SERIAL PRIMARY KEY,
-  name_fr VARCHAR(100) NOT NULL,
-  name_ar VARCHAR(100),
-  region VARCHAR(100)
+ name_fr VARCHAR(100) NOT NULL, region VARCHAR(100)
 );
 
-INSERT INTO cities (name_fr, name_ar, region) VALUES
+INSERT INTO cities (name_fr, region) VALUES
+  ('Casablanca', 'Grand Casablanca'),
+  ('Rabat', 'Rabat-Sale-Kenitra'),
+  ('Marrakech', 'Marrakech-Safi'),
+  ('Fes', 'Fes-Meknes'),
+  ('Tanger', 'Tanger-Tetouan-Al Hoceima'),
+  ('Agadir', 'Souss-Massa'),
+  ('Oujda', 'Oriental'),
+  ('Meknes', 'Fes-Meknes'),
+  ('Kenitra', 'Rabat-Sale-Kenitra'),
+  ('Tetouan', 'Tanger-Tetouan-Al Hoceima');
   ('Casablanca', 'الدار البيضاء', 'Grand Casablanca'),
   ('Rabat', 'الرباط', 'Rabat-Salé-Kénitra'),
   ('Marrakech', 'مراكش', 'Marrakech-Safi'),
